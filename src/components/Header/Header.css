@@ -1,0 +1,21 @@
+header {
+    background-color: #000000;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    font-family: "Gilroy", Sans-serif;
+    font-weight: 500rem;
+    color: #fff;
+  }
+  .header-logo{
+    display: flex;
+    align-items: center;
+  
+  }
+.logo{
+    margin-right: 10px;
+}
+
+  

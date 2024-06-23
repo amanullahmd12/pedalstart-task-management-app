@@ -1,0 +1,100 @@
+.task {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+  }
+  
+  .task h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+  
+  .task p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+ .delete{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    color: #f51313;
+    background: none;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+    
+  }
+
+.eye{
+
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    color: #0081EE;
+    background: none;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+  }
+  .delete-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .modal-content button {
+    margin-top: 10px;
+    background: linear-gradient(45deg, #0081EE, #01B9EB, #FE5B48, #F0A039, #8026C1, #E73598);
+    background-size: 400%;
+    animation: button-gradient 10s ease infinite;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 3px;
+    outline: none;
+  }
+  
+  .modal-content button:hover {
+    background: red;
+  }
+  
+  @keyframes button-gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  
+  .modal-content p {
+    font-size: 1rem;
+    color: red; 
+  }
+    

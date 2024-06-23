@@ -1,0 +1,72 @@
+.animated-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .animated-text h1 {
+    font-family: "Gilroy", Sans-serif;
+    font-weight: 900;
+    font-size: 3rem; 
+    background: linear-gradient(45deg, #0081EE, #01B9EB, #FE5B48, #F0A039, #8026C1, #E73598);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-gradient 10s ease infinite;
+  }
+  
+  @keyframes text-gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  
+  .animated-text p {
+    font-family: "Gilroy", Sans-serif;
+    font-weight: bolder;
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+    margin-top: 10px; /* Reduce margin for spacing */
+  }
+  
+  #spin {
+    color: #e73598;
+  }
+  
+  #spin:after {
+    content: "";
+    animation: spin 3s ease-in infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      content: "Organize.";
+    }
+    50% {
+      content: "Prioritize.";
+    }
+    100% {
+      content: "Achieve.";
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .animated-text h1 {
+      font-size: 2.5rem; 
+    }
+  
+    .animated-text p {
+      font-size: 1.5rem; 
+    }
+  }
+  

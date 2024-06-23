@@ -1,0 +1,112 @@
+.task-details-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .task-details {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-details-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .task-details h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  .task-details-header input{
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  .task-details input[type="text"],
+  .task-details textarea,
+  .task-details input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .task-details textarea {
+    resize: vertical; 
+  }
+  
+  .delete {
+    color: #f51313;
+    margin-right: 2px;
+    background: none;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+  }
+  .close{
+    color: #ee5f00;
+    margin-right: 2px;
+    background: none;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+  }
+  .edit{
+    color: #0081EE;
+    margin-right: 2px;
+    background: none;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+  }
+  .save{
+    color: #0081EE;
+    margin-right: 2px;
+    background: none;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  button:hover {
+   color: #000dff;
+  }
+  .task-details button:last-child {
+    margin-right: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .task-details {
+      width: 90%;
+    }
+  }
+  
