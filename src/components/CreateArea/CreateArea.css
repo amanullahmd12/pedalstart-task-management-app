@@ -22,7 +22,6 @@ form.create-task {
     resize: none;
   }
   
-  /* Button styles */
   form.create-task button {
     position: absolute;
     right: 18px;
@@ -37,32 +36,7 @@ form.create-task {
     outline: none;
   }
   
-  .success-message,
-  .error-message {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    z-index: 999;
-  }
-  
-  .success-message {
-    background-color: #e8f5e9;
-    color: #4caf50; 
-  }
-  
-  .error-message {
-    background-color: #ffb3b3; 
-    color: #ff0000; 
-  }
-  
-  .success-message > svg,
-  .error-message > svg {
-    font-size: 1.5rem;
-  }
+
   
   @media screen and (max-width: 600px) {
     form.create-task {
